@@ -1,0 +1,30 @@
+[
+    {
+        "question": "Puis-je visiter sans être membre ?",
+        "answer": "Oui. Les visiteurs sont les bienvenus gratuitement lors de nos permanences, <b>uniquement le mercredi</b>.Il est recommandé de nous <a href=\"/contact\">prévenir de votre visite</a>. Un membre vous fera la visite avec plaisir.<br>En tant que visiteur, il n'est pas possible d'accéder au parc machine sauf accord préalable."
+    },
+    {
+        "question": "Comment devenir membre du hackerspace ?",
+        "answer": "Il suffit de venir à une permanence, généralement le mercredi, et de faire la demande d'inscription à n'importe quel membre, qui vous redirigera si nécessaire vers la bonne personne. L'inscription prend quelques secondes. Ensuite, un formulaire <i>(obligation légale)</i> est à remplir en ligne."
+    },
+    {
+        "question": "Faut-il des compétences particulières ?",
+        "answer": "Non ! Le hackerspace est ouvert à tous, débutants comme experts. L'entraide et le partage de connaissances sont au cœur de notre philosophie."
+    },
+    {
+        "question": "Vous êtes des pirates ?",
+        "answer": "Le terme “hacker”, galvaudé en français, ne se réfère pas ici au “pirate”. Il désigne plutôt un bidouilleur, une personne curieuse <em>débutante comme experte</em> qui souhaite apprendre, partager le savoir et le savoir-faire, se poser des questions et créer de nouvelles choses."
+    },
+    {
+        "question": "Quels sont les horaires d'ouverture ?",
+        "answer": "Nous sommes ouverts chaque mercredi de 16h à 22h aux visiteurs.<br><br>D'autres ouvertures publiques sont indiquées dans <a href=\"/agenda\">notre agenda</a>. Certains jours sont thématisés, conditionnés ou limités, lisez la description du jour concerné.<br><br><i>Les membres disposent d'un accès permanent au hackerspace sous conditions.</i>"
+    },
+    {
+        "question": "Quel est le coût de l'adhésion et comment ça fonctionne ?",
+        "answer": "Une cotisation annuelle de 5€ octroie le statut de membre adhérant.<br><b>+</b> Une participation mensuel à partir de 20 € donnant accès à tout l'équipement. <i><br><br>Il est possible de payer un tarif préférentiel à partir de 10 € en fonction de vos revenus. <b>Ce choix est laissé à votre discrétion</b>, merci de jouer franc jeu, les cotisations étant les seules sources de revenus fixes de l'association. Vous pouvez en discuter avec la personne en charge de votre inscription.</i>"
+    },
+    {
+        "question": "Quels outils/équipements sont à disposition pour les membres ?",
+        "answer": "Découpe laser, Impression 3D, Fraiseuses numérique, Travail du bois, Travail du métal, Matériel pour l'électronique, Équipement audio-visuel, Mécanique vélo, ..."
+    }
+]
