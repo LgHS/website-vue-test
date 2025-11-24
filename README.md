@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The Liege Hackerspace website remade in Vue.
+The Liege Hackerspace website rebuilt in Vue.
 
-This project purpose is to propose an alternative for the current website.
+The aim of this project is to offer an alternative to the current website.
 
-The main objective here is to provide an example of what is possible with Vue and to make a first contribution for the company.
+The main objective here is to provide an example of what can be done with Vue and to make an initial contribution to the company.
 
-Hope you will like it as much as I enjoyed doing that.
+I hope you enjoy it as much as I enjoyed creating it.
