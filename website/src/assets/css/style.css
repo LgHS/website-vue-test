@@ -1,0 +1,159 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: url(../images/tooth.svg) repeat-x top left;
+    z-index: 50;
+}
+
+article p,
+article ul,
+article ol,
+aside p,
+aside ul,
+aside ol {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article ul,
+article ol,
+aside ul,
+aside ol {
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+article ul,
+aside ul {
+    list-style-type: disc;
+}
+
+article h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid #ffd800;
+}
+
+aside h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 4px solid #ffd800;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 0;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    background: #f9fafb;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.faq-question:hover {
+    background: #f3f4f6;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    content: '−';
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.3s ease, padding 0.3s ease;
+    padding: 0 1rem;
+}
+
+.faq-answer.active {
+    grid-template-rows: 1fr;
+    padding: 1rem;
+}
+
+.faq-answer > * {
+    min-height: 0;
+}
+
+article a,
+aside a {
+    color: #000000;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #ffd800 0, #ffd800 35%, transparent 35%);
+    background-repeat: no-repeat;
+    background-size: 100% 35%;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease;
+}
+
+article a:hover,
+article a:focus,
+aside a:hover,
+aside a:focus {
+    color: #000000;
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+
+.status-light {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.status-open {
+    background-color: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+    animation: pulse-green 2s infinite;
+}
+.status-members-only {
+    background-color: #f97316;
+    box-shadow: 0 0 8px #f97316;
+}
+.status-closed {
+    background-color: #ef4444;
+    box-shadow: 0 0 8px #ef4444;
+}
+.status-unknown {
+    background-color: #9ca3af;
+}
+@keyframes pulse-green {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
