@@ -1,4 +1,6 @@
 <script setup>
+import FooterLayout from './components/layout/FooterLayout.vue';
+
 const links = [
   { label: "Home", to: "/" },
   { label: "Agenda", to: "/agenda" },
@@ -22,6 +24,8 @@ const links = [
   </header>
 
   <RouterView />
+
+  <FooterLayout />
 </template>
 
 <style scoped></style>
