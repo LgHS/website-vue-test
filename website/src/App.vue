@@ -1,5 +1,6 @@
 <script setup>
 import FooterLayout from './components/layout/FooterLayout.vue';
+import GalleryLayout from './components/layout/gallery/GalleryLayout.vue';
 import HeaderLayout from './components/layout/header/HeaderLayout.vue';
 </script>
 
@@ -7,6 +8,8 @@ import HeaderLayout from './components/layout/header/HeaderLayout.vue';
   <HeaderLayout />
 
   <RouterView />
+
+  <GalleryLayout />
 
   <FooterLayout />
 </template>
