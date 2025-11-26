@@ -50,6 +50,8 @@ const socialLinks = [
     alt:"Space API"
   },
 ]
+
+const contactMail = "ping@lghs.be";
 </script>
 
 <template>
@@ -63,7 +65,7 @@ const socialLinks = [
       <b>Liège Hackerspace ASBL</b> - <a
         href="https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=649448256"
         target="_blank" rel="noopener">BE0649.448.256</a>
-      <br><b>Mail:</b> ping@lghs.be
+      <br><b>Mail:</b> <a :href="`mailto:${contactMail}`">{{ contactMail }}</a>
     </p>
     <nav class="mt-4">
       <ul class="flex justify-center items-center gap-3">
