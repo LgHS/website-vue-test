@@ -1,4 +1,6 @@
 <script setup>
+import TopHeaderLayout from './TopHeaderLayout.vue';
+
 const links = [
   { label: "Home", to: "/" },
   { label: "Agenda", to: "/agenda" },
@@ -9,6 +11,9 @@ const links = [
 
 <template>
   <header class="py-12 relative">
+    <div>
+      <TopHeaderLayout />
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="flex items-center justify-center md:justify-start">
         <a href="/" title="Retour à la page d'accueil" class="block">
