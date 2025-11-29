@@ -4,20 +4,22 @@ import { Accordion, AccordionPanel, AccordionHeader, AccordionContent } from 'pr
 </script>
 
 <template>
-  <h3 class="bg-black text-white uppercase font-bold px-4 py-3 text-base mb-4">
-    Questions fréquentes
-  </h3>
+  <article class="mb-6">
+    <h3 class="bg-black text-white uppercase font-bold px-4 py-3 text-base mb-4">
+      Questions fréquentes
+    </h3>
 
-  <Accordion value="0">
-    <AccordionPanel v-for="item in faq" :key="item.question" :value="item.question" class="faq-item">
-      <AccordionHeader class="faq-question">
-        {{ item.question }}
-      </AccordionHeader>
-      <AccordionContent class="faq-answer">
-        <p v-html="item.answer"></p>
-      </AccordionContent>
-    </AccordionPanel>
-  </Accordion>
+    <Accordion value="0">
+      <AccordionPanel v-for="item in faq" :key="item.question" :value="item.question" class="faq-item">
+        <AccordionHeader class="faq-question">
+          {{ item.question }}
+        </AccordionHeader>
+        <AccordionContent class="faq-answer">
+          <p v-html="item.answer"></p>
+        </AccordionContent>
+      </AccordionPanel>
+    </Accordion>
+  </article>
 </template>
 
 <style scoped>
