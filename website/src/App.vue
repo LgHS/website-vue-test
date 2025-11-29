@@ -5,13 +5,15 @@ import HeaderLayout from './components/layout/header/HeaderLayout.vue';
 </script>
 
 <template>
-  <HeaderLayout />
+  <div class="mx-20 mb-10">
+    <HeaderLayout />
 
-  <RouterView />
+    <RouterView />
 
-  <GalleryLayout />
+    <GalleryLayout />
 
-  <FooterLayout />
+    <FooterLayout />
+  </div>
 </template>
 
 <style scoped></style>
