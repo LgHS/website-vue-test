@@ -29,6 +29,7 @@ import { Accordion, AccordionPanel, AccordionHeader, AccordionContent } from 'pr
 }
 
 .faq-question {
+  transition: 0.3s;
   font-size: 1.125rem;
   font-weight: 700;
   background-color: #f9fafb;
@@ -36,6 +37,6 @@ import { Accordion, AccordionPanel, AccordionHeader, AccordionContent } from 'pr
 
 .faq-question:hover {
   transition: 0.3s;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 </style>
