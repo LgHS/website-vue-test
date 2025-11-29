@@ -1,5 +1,12 @@
+<script setup>
+import { InputText } from 'primevue';
+
+let value = "";
+</script>
+
 <template>
   <article class="mb-6">
+    <InputText type="text" v-model="value" />
     <h3 class="bg-black text-white uppercase font-bold px-4 py-3 text-base mb-4">
       Le Liège Hackerspace
     </h3>
