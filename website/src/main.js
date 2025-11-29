@@ -12,8 +12,12 @@ app.use(PrimeVue, {
   theme: {
     preset: Aura,
     options: {
-      darkModeSelector: false,
+      darkModeSelector: false, // Dark mode disabled (for now)
     },
+    cssLayer: {
+      name: 'primevue',
+      order: 'theme, base, primevue' // So Tailwind utilities can override PrimeVue components safely
+    }
   },
 })
 
