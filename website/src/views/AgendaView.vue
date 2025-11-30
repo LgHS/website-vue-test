@@ -1,3 +1,22 @@
+<script setup>
+import ICalParser from '@/assets/js/ical-parser';
+
+const icsUrl = import.meta.env.VITE_CALENDAR_ICS_URL
+const parser = new ICalParser()
+
+async function loadCalendar() {
+  const res = await fetch(icsUrl)
+  const text = await res.text()
+
+  parser.parse(text)
+  const events = parser.getUpcomingEvents(20)
+
+  console.log(events)
+}
+
+loadCalendar()
+</script>
+
 <template>
   <article class="mb-6">
     <h3 class="bg-black text-white uppercase font-bold px-4 py-3 text-base mb-4">
