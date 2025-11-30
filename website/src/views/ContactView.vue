@@ -1,3 +1,17 @@
+<script setup>
+const bce = import.meta.env.VITE_CONTACT_BCE
+
+const address = "Rue de la Loi 16 bis 4020 Liège"
+const encodedAddress = encodeURIComponent(address)
+const googleMapsUrl = "https://www.google.com/maps/search/?q="+encodedAddress
+
+const tel = import.meta.env.VITE_CONTACT_TEL
+const mailGeneral = import.meta.env.VITE_CONTACT_MAIL_GENERAL
+const mailAdmin = import.meta.env.VITE_CONTACT_MAIL_ADMIN
+const mailCctv = import.meta.env.VITE_CONTACT_MAIL_CCTV
+const mailNoc = import.meta.env.VITE_CONTACT_MAIL_NOC
+</script>
+
 <template>
   <article class="mb-6">
     <h3 class="bg-black text-white uppercase font-bold px-4 py-3 text-base mb-4">
@@ -6,8 +20,10 @@
     <div class="leading-relaxed">
       <div class="text-center my-6 py-4 bg-gray-50 border-2 border-black">
         <p class="font-bold mb-1">Liège Hackerspace ASBL</p>
-        <p class="text-sm mb-1">BCE: BE0649.448.256</p>
-        <p class="text-sm">Rue de la Loi 16 bis,<br>4020 Liège, Belgique</p>
+        <p class="text-sm mb-1">{{ bce }}</p>
+        <a :href="googleMapsUrl" target="_blank" rel="noopener" class="text-sm">
+          Rue de la Loi 16 bis<br />4020 Liège, Belgique
+        </a>
       </div>
       <p class="mb-4">
         Pour rappel, le hackerspace n'est pas un club de <i>"pirates informatiques"</i>. Nous ne réalisons aucune
@@ -19,8 +35,8 @@
       <p class="mb-4"><b>Préférez toujours le mail général</b> pour nous joindre.
       </p>
       <ul>
-        <li><b>Mail général:</b> ping@lghs.be</li>
-        <li><b>Téléphone:</b> +32 (0) 4 287 32 26</li>
+        <li><b>Mail général:</b> <a :href="`mailto:${mailGeneral}`">{{ mailGeneral }}</a></li>
+        <li><b>Téléphone:</b> <a :href="`tel:${tel}`">{{ tel }}</a></li>
       </ul>
       <p></p>
       <h4>Social</h4>
@@ -33,9 +49,9 @@
       <h4>Autres</h4>
       <p><em>Requêtes uniquement, nous n'avons pas besoin de consultants, services, ...</em></p>
       <ul>
-        <li><b>Admin:</b> admin@lghs.be</li>
-        <li><b>Caméra &amp; RGPD:</b> cctv@lghs.be</li>
-        <li><b>NOC &amp; Abuse:</b> noc@lghs.be</li>
+        <li><b>Admin:</b> <a :href="`mailto:${mailAdmin}`">{{ mailAdmin }}</a></li>
+        <li><b>Caméra &amp; RGPD:</b> <a :href="`mailto:${mailCctv}`">{{ mailCctv }}</a></li>
+        <li><b>NOC &amp; Abuse:</b> <a :href="`mailto:${mailNoc}`">{{ mailNoc }}</a></li>
       </ul>
     </div>
   </article>

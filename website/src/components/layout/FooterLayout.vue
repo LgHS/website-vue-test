@@ -1,4 +1,8 @@
 <script setup>
+const bce = import.meta.env.VITE_BCE
+const bceUrl = import.meta.env.VITE_BCE_URL
+const contactMail = import.meta.env.VITE_CONTACT_MAIL_GENERAL
+
 const icons = import.meta.glob('@/assets/img/social/*.svg', { // Social icons SVG must be there
   eager: true,
   import: 'default'
@@ -8,50 +12,48 @@ const icons = import.meta.glob('@/assets/img/social/*.svg', { // Social icons SV
  * Resolves icon path by filename.
  * @param filename The filename of the icon to resolve.
  */
- function resolveIcon(filename) {
+function resolveIcon(filename) {
   return icons[`/src/assets/img/social/${filename}`]
 }
 
 const socialLinks = [
   {
-    href:"https://www.facebook.com/liegehackerspace/",
-    title:"Facebook",
-    img:"facebook.svg",
-    alt:"Facebook"
+    href: "https://www.facebook.com/liegehackerspace/",
+    title: "Facebook",
+    img: "facebook.svg",
+    alt: "Facebook"
   },
   {
-    href:"https://www.instagram.com/lghackerspace/",
-    title:"Instagram",
-    img:"instagram.svg",
-    alt:"Instagram"
+    href: "https://www.instagram.com/lghackerspace/",
+    title: "Instagram",
+    img: "instagram.svg",
+    alt: "Instagram"
   },
   {
-    href:"https://github.com/LgHS",
-    title:"Github",
-    img:"github.svg",
-    alt:"Github"
+    href: "https://github.com/LgHS",
+    title: "Github",
+    img: "github.svg",
+    alt: "Github"
   },
   {
-    href:"https://hackerspaces.be/",
-    title:"Hackerspaces",
-    img:"spaceinvaders.svg",
-    alt:"SpaceInvaders"
+    href: "https://hackerspaces.be/",
+    title: "Hackerspaces",
+    img: "spaceinvaders.svg",
+    alt: "SpaceInvaders"
   },
   {
-    href:"https://mapall.space/heatmap/show.php?id=Liege+Hackerspace",
-    title:"mapall.space/heatmap",
-    img:"heat.svg",
-    alt:"Heatmap"
+    href: "https://mapall.space/heatmap/show.php?id=Liege+Hackerspace",
+    title: "mapall.space/heatmap",
+    img: "heat.svg",
+    alt: "Heatmap"
   },
   {
-    href:"https://lghs.be/sapi",
-    title:"SpaceAPI",
-    img:"spaceapi.svg",
-    alt:"Space API"
+    href: "https://lghs.be/sapi",
+    title: "SpaceAPI",
+    img: "spaceapi.svg",
+    alt: "Space API"
   },
 ]
-
-const contactMail = "ping@lghs.be";
 </script>
 
 <template>
@@ -62,9 +64,7 @@ const contactMail = "ping@lghs.be";
       Rétro-ingénierie, Audio-visuel, Résidences, ...
     </p>
     <p class="text-sm mb-4">
-      <b>Liège Hackerspace ASBL</b> - <a
-        href="https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=649448256"
-        target="_blank" rel="noopener">BE0649.448.256</a>
+      <b>Liège Hackerspace ASBL</b> - <a :href=bceUrl target="_blank" rel="noopener">{{ bce }}</a>
       <br><b>Mail:</b> <a :href="`mailto:${contactMail}`">{{ contactMail }}</a>
     </p>
     <nav class="mt-4">
