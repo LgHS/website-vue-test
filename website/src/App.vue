@@ -5,7 +5,7 @@ import HeaderLayout from './components/layout/header/HeaderLayout.vue';
 </script>
 
 <template>
-  <div class="mx-20 mb-10">
+  <div class="mx-10 sm:mx-20 mb-10">
     <HeaderLayout />
 
     <RouterView />
