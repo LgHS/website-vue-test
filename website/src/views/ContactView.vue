@@ -18,7 +18,7 @@ const mailNoc = import.meta.env.VITE_CONTACT_MAIL_NOC
       Contact
     </h3>
     <div class="leading-relaxed">
-      <div class="text-center my-6 py-4 bg-gray-50 border-2 border-black">
+      <div class="text-center my-6 py-4 bg-gray-50 dark:bg-black/50 border-2 border-black">
         <p class="font-bold mb-1">Liège Hackerspace ASBL</p>
         <p class="text-sm mb-1">{{ bce }}</p>
         <a :href="googleMapsUrl" target="_blank" rel="noopener" class="text-sm">

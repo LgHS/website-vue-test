@@ -1,8 +1,14 @@
-<script setup></script>
+<script setup>
+import { Button } from 'primevue';
+
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('my-app-dark');
+}
+</script>
 
 <template>
   <nav class="absolute top-5 right-4 z-10">
-    <ul class="flex items-center gap-1 text-sm text-gray-600">
+    <ul class="flex items-center gap-1 text-sm text-gray-600 dark:text-white">
       <li class="inline-flex items-center gap-2 mr-2">
         <span id="status-light" class="status-light status-unknown" title="Chargement..."></span>
         <span id="status-text" class="text-xs">Chargement</span>
@@ -24,4 +30,5 @@
       </li>
     </ul>
   </nav>
+  <Button label="Toggle Dark Mode" @click="toggleDarkMode()" variant="outlined" />
 </template>

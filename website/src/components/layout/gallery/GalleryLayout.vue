@@ -86,7 +86,7 @@ function attachOverlayClose() {
 </script>
 
 <template>
-  <section class="block p-12 bg-gray-100">
+  <section class="block p-12 bg-gray-100 dark:bg-black/50 rounded">
     <!-- Photos -->
     <div class="max-w-screen-2xl mx-auto relative">
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -95,7 +95,7 @@ function attachOverlayClose() {
           :key="photo"
           :src="photo"
           @click="openFullscreen(photo)"
-          class="w-full aspect-square object-cover transition duration-300 hover:scale-105 hover:shadow-xl/20 cursor-pointer"
+          class="w-full aspect-square object-cover transition duration-300 hover:scale-105 hover:shadow-xl/20 cursor-pointer rounded"
           alt=""
         />
       </div>

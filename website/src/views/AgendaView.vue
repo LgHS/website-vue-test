@@ -7,13 +7,13 @@
     <p class="text-lg mb-3">
       Trouvez ci-dessous l'agenda du Liège Hackerspace pour les <strong>42 prochains jours</strong>.
     </p>
-    <p class="text-sm text-gray-600">
+    <p class="text-sm text-gray-600 dark:text-white">
       <em>Certains événements sont partiellement ou totalement indépendants du hackerspace mais organisés dans ses murs,
         souvent par ses membres.</em>
     </p>
     <div class="leading-relaxed">
       <h4>Open Night</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Mercredi 26 novembre</span>
         <span class="ml-4">🕐 16:00
           →
@@ -26,7 +26,7 @@
         hackerspace, ses membres, ses projets.
       </p>
       <h4>Linux Install Party (sur inscription)</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Samedi 29 novembre</span>
         <span class="ml-4">🕐 14:00
           →
@@ -39,7 +39,7 @@
             href="mailto:lnux.ip.jhc@gmail.com" target="_blank"><u><u>lnux.ip.jhc@gmail.com</u></u></a></b>
       </p>
       <h4>Open Night</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Mercredi 3 décembre</span>
         <span class="ml-4">🕐 16:00
           →
@@ -52,7 +52,7 @@
         hackerspace, ses membres, ses projets.
       </p>
       <h4>Linux Meeting Party - Linux Liège Team</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Jeudi 4 décembre</span>
         <span class="ml-4">🕐 19:00
           →
@@ -65,7 +65,7 @@
         des logiciels libres en général.
       </p>
       <h4>Open Night</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Mercredi 10 décembre</span>
         <span class="ml-4">🕐 16:00
           →
@@ -78,7 +78,7 @@
         hackerspace, ses membres, ses projets.
       </p>
       <h4>Samedi de fin d'année</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Samedi 13 décembre</span>
         <span class="ml-4">🕐 12:00
           →
@@ -91,7 +91,7 @@
           hacker/maker/...spaces, voisins.</i>
       </p>
       <h4>Auberge espagnole de fin d'année</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Samedi 13 décembre</span>
         <span class="ml-4">🕐 17:00
           →
@@ -103,7 +103,7 @@
         d'année.<br><br><i>*Anciens membres, visiteurs connus, autres hacker/maker/...spaces, voisins.</i>
       </p>
       <h4>Open Night - La dernière de l'année !</h4>
-      <p class="text-sm text-gray-600">
+      <p class="text-sm text-gray-600 dark:text-white">
         <span class="font-semibold">📅 Mercredi 17 décembre</span>
         <span class="ml-4">🕐 16:00
           →
@@ -116,11 +116,11 @@
         hackerspace, ses membres, ses projets.
       </p>
     </div>
-    <div class="mt-8 p-4 bg-gray-50 border-2 border-black text-center">
+    <div class="mt-8 p-4 bg-gray-50 dark:bg-black/50 border-2 border-black text-center">
       <p class="font-bold mb-3 text-lg">📆 S'abonner au calendrier</p>
       <p class="text-sm mb-4">Ajoutez notre calendrier à votre application préférée (Google Calendar, Apple Calendar,
         Outlook...)</p>
-      <div class="bg-white border-2 border-black px-4 py-3 mb-3 inline-block">
+      <div class="bg-white dark:bg-black/70 border-2 border-black px-4 py-3 mb-3 inline-block">
         <code class="text-sm font-mono">https://lghs.be/calendar.php</code>
       </div>
       <button

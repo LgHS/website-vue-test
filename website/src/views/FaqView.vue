@@ -11,7 +11,11 @@ import { Accordion, AccordionPanel, AccordionHeader, AccordionContent } from 'pr
 
     <Accordion value="0">
       <AccordionPanel v-for="item in faq" :key="item.question" :value="item.question" class="faq-item">
-        <AccordionHeader class="faq-question">
+        <AccordionHeader
+          class="faq-question text-lg font-bold transition
+                 bg-gray-100 dark:bg-gray-800
+                 text-gray-900 dark:text-gray-100
+                 hover:text-blue-600 dark:hover:text-blue-300">
           {{ item.question }}
         </AccordionHeader>
         <AccordionContent class="faq-answer">
@@ -32,7 +36,6 @@ import { Accordion, AccordionPanel, AccordionHeader, AccordionContent } from 'pr
   transition: 0.3s;
   font-size: 1.125rem;
   font-weight: 700;
-  background-color: #f9fafb;
 }
 
 .faq-question:hover {
